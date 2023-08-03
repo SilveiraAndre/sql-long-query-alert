@@ -1,18 +1,18 @@
 # SQL Server Query Execution Alert Script 
 
-## Esse é um procedimento armazenado que monitora e envia alertas via e-mail para consultas em execução a mais de 10 minutos.
+## This is a stored procedure that monitore and send alerts using sp_send_dbmail for queries that been runing for more than 10 minutes.
 
-## Uso
-1.  Abra o SSMS em seu computador e conecte em sua instância de servidor;
-2.  Execute o script de título @nome em seu banco de dados. O script irá criar um procedimento armazenado com nome @nome;
-3.  Configuração para envio de e-mail:
-   - No final da procedure, será necessário alterar o nome de usuário do sysmail de acordo com seu usuário configurado;
-   - Alterar a variável @recipients com seus destinatários de preferência;
+## Use 
+1. Open SSMS and connect to your SQL Server instance 
+2. Run the script in the provide @nome file in your database. The script will create a stored procedure with @nome name
+3. Settings for send email:
+   - At the end of the script, will be necessary update the name of sysmail user according to your user configurate;
+   - Update the @recipients variable with your recipients;
 
-## Observações
-1. O script faz uso de tabelas temporárias para processar e armazenar dados;
-2. Execute o script em um ambiente controlado antes de rodá-lo em seu banco de produção;
-3. Lembre-se de alterar as informações no body de html de acordo com suas preferências e caso inclua alguma coluna na tempdb #LOG;
+## Notes 
+1. The script uses temp tables to process and store data;
+2. Run the script in a controlled environment before execute in your database production;
+3. Remember to customize the information in body content according to your preference and in case that you include more columns in tempdb #LOG;
 
 ##License 
 This script is provided under the [MIT LICENSE](License).
