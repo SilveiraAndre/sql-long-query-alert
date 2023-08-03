@@ -16,6 +16,6 @@
 * If necessary, alter the column TEXT from #LOG, adjusting according from your needs, using replace, ltrim... 
 
 ## License 
-This script is provided under the [MIT LICENSE](License).
+This script is provided under the [MIT LICENSE](LICENSE).
 
 
