@@ -4,7 +4,7 @@
 
 ## Use 
 * Open SSMS and connect to your SQL Server instance 
-* Run the script in the provide sp_AuditProcedureQuery.sql file in your database. The script will create a stored procedure with sp_AuditProcedureQuery object name;
+* Run the script in the provide (sp_AuditProcedureQuery.sql) file in your database. The script will create a stored procedure with sp_AuditProcedureQuery object name;
 * Settings for send email:
    - At the end of the script, will be necessary update the name of sysmail user according to your user configurate;
    - Update the @recipients variable with your recipients;
