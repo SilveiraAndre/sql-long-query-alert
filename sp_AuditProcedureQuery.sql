@@ -32,8 +32,8 @@ DISTINCT
 
 	  ID		= R.SESSION_ID 
 	, CMD		= R.COMMAND 
-	, [LOGIN]	= ST.TEXT
-	, [TEXT]	= SP.LOGINAME 
+	, [LOGIN]	= SP.LOGINAME
+	, [TEXT]	= LEFT(LTRIM(ST.TEXT),75) 
 
 INTO #LOG
 FROM	SYS.DM_EXEC_REQUESTS R WITH(NOLOCK)
@@ -96,7 +96,7 @@ BEGIN
 				td = ID, '',
 				td = CMD, '',
 				td = LOGIN, '', 
-				td = left(replace(replace(replace(text,'--/=',''),'=',''),'',''),75)
+				td = text
 
 	FROM #LOG WITH(NOLOCK)
 
