@@ -14,7 +14,7 @@
 2. Run the script in a controlled environment before execute in your database production;
 3. Remember to customize the information in body content according to your preference and in case that you include more columns in tempdb #LOG;
 
-##License 
+## License 
 This script is provided under the [MIT LICENSE](License).
 
 
