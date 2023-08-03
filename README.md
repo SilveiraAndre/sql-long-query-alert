@@ -13,6 +13,7 @@
 * The script uses temp tables to process and store data;
 * Run the script in a controlled environment before execute in your database production;
 * Remember to customize the information in body content according to your preference and in case that you include more columns in tempdb #LOG;
+* If necessary, alter the column TEXT from #LOG, adjusting according from your needs, using replace, ltrim... 
 
 ## License 
 This script is provided under the [MIT LICENSE](License).
